@@ -190,6 +190,32 @@ User: /model mistral
 Bot: ✅ AI model changed to: 🆓 mistral
 ```
 
+## 📱 Demo Screenshots
+
+### Bot Status and Model Information
+The bot provides comprehensive status information including current AI model, memory statistics, and available models:
+
+![Bot Status](demos/bot-status-demo.png)
+
+*Shows the bot running with DeepSeek V3.2 model, displaying memory statistics (4 short-term items, 22 long-term memories, 1 RAG document) and listing all available AI models including both Ollama Cloud and commercial options.*
+
+### GitHub Integration Demo
+MiniBot can interact with GitHub repositories, create issues, and provide intelligent suggestions:
+
+![GitHub Integration](demos/github-integration-demo.png)
+
+*Demonstrates the bot's ability to understand project context and suggest appropriate GitHub issue titles like "Fix Payment Gateway Integration" based on conversation history.*
+
+> **Note**: To add your actual demo screenshots, replace the placeholder files in the `demos/` folder with your Telegram screenshots. The images should show the bot's key features in action.
+
+### Key Demo Features Shown:
+- **🧠 AI Model**: DeepSeek V3.2 for fast, accurate responses
+- **💾 Memory System**: Multi-layered memory with short-term, long-term, and RAG storage
+- **🔗 MCP Integration**: 2 active MCP servers (GitHub and Figma)
+- **📊 Model Variety**: 19+ available AI models including GPT-4, Claude, Gemini, and Ollama models
+- **🤖 Smart Responses**: Context-aware suggestions and intelligent conversation handling
+- **⚡ Real-time Status**: Live memory statistics and system status monitoring
+
 ## 🚀 Deployment
 
 ### Docker Production Deployment
