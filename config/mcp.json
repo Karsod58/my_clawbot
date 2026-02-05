@@ -1,0 +1,55 @@
+{
+  "mcpServers": {
+    "github": {
+      "enabled": true,
+      "description": "GitHub repository and issue management",
+      "requiredEnvVars": ["GITHUB_TOKEN"],
+      "operations": [
+        "list_repositories",
+        "get_repository",
+        "list_issues",
+        "create_issue",
+        "get_file_content",
+        "list_commits",
+        "get_pull_requests",
+        "search_repositories",
+        "get_user_info"
+      ]
+    },
+    "figma": {
+      "enabled": true,
+      "description": "Figma design file and component management",
+      "requiredEnvVars": ["FIGMA_TOKEN"],
+      "operations": [
+        "get_user_info",
+        "list_team_projects",
+        "get_project_files",
+        "get_file",
+        "get_file_nodes",
+        "get_images",
+        "get_comments",
+        "post_comment",
+        "get_team_components",
+        "get_component",
+        "get_team_styles",
+        "get_style"
+      ]
+    }
+  },
+  "settings": {
+    "rateLimiting": {
+      "enabled": true,
+      "requestsPerMinute": 60,
+      "burstLimit": 10
+    },
+    "caching": {
+      "enabled": true,
+      "ttl": 300,
+      "maxSize": 1000
+    },
+    "retries": {
+      "maxAttempts": 3,
+      "backoffMs": 1000
+    }
+  }
+}
